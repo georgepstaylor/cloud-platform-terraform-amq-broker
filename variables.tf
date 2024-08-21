@@ -45,3 +45,7 @@ variable "aws_region" {
   default     = "eu-west-2"
 }
 
+variable "auto_minor_version_upgrade" {
+  description = "true/false - whether to enable automatic minor upgrades. Note: with ActiveMQ 5.18, this must be true"
+  default     = false
+}

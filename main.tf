@@ -80,7 +80,7 @@ resource "aws_mq_broker" "broker" {
     console_access = false
   }
 
-  auto_minor_version_upgrade = false
+  auto_minor_version_upgrade = var.auto_minor_version_upgrade
 
   logs {
     general = true
